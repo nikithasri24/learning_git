@@ -19,4 +19,92 @@ Configure User
 Configure default editor
 %git config --global core.editor emacs 
 
+Start tracking files 
+%git add <filename>
 
+Get a copy of existing project 
+%git clone <project link>
+
+Name the cloned project 
+%git clone <project link> <folder name>
+
+Check the files status
+%git status
+
+Create a new file and add content 
+%echo '<content>' > <filename>
+
+Ignore few files from adding to git 
+-->create a file listing patterns to match them named .gitignore. 
+%cat .gitignore
+
+```The rules for the patterns you can put in the .gitignore file are as follows:
+
+Blank lines or lines starting with # are ignored.
+
+Standard glob patterns work, and will be applied recursively throughout the entire working tree.
+
+You can start patterns with a forward slash (/) to avoid recursivity.
+
+You can end patterns with a forward slash (/) to specify a directory.
+
+You can negate a pattern by starting it with an exclamation point (!).```
+
+Viewing staged and unstaged changes 
+%git diff 
+
+To see what is stagged and will go into your next commit 
+$git diff --staged 
+
+Commiting changes 
+$git commit 
+```add commit changes```
+$git commit -m 'this is the message'
+
+Removing files
+$rm <filename>
+``` This will only remove the file from the working directory and shows up in the changes not stagged for commit ```
+
+Stage the file removal 
+$git rm <filename>
+```commit the change to remove the file from remote location```
+
+View commit history
+$git log 
+
+Expand the commit details 
+$git log -p -"commit number"
+
+Check the commit stats
+$git log --stat
+
+
+Working with Remotes 
+
+Check the remotes configured 
+$git remote 
+
+Check the URLs from where the repo is downloaded 
+$git remote -v 
+
+Add remote repository 
+$git remote add <shortname> <url>
+
+``` We can see that all the files are mapped to the username who created the files. Use the shortname to identify the person and the file```
+
+Fetch files of a specific contributor 
+$git fetch <shortname>
+
+Push files to remote
+$git push origin master 
+
+Renaming remotes
+$git remote rename nick nikitha
+
+Removing remotes
+$git remote remove nikitha 
+
+
+References:
+https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control
+ 
