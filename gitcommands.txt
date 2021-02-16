@@ -1,0 +1,22 @@
+
+Create a directory 
+% mkdir github 
+
+Initialize git 
+%cd github 
+%git init 
+
+Check the git version 
+%git --version
+
+Check the exisiting configs 
+%git config --list --show-origin  
+
+Configure User 
+%git config --global user.name "Nikitha"
+%git config --global user.email "nikitha.lisi@gmail.com"
+
+Configure default editor
+%git config --global core.editor emacs 
+
+
