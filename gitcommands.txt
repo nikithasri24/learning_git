@@ -108,6 +108,15 @@ Creating a Branch:
 $git branch arrays_branch
 $git checkout -b arrays_branch
 
+Deleting a branch:
+$ git branch -d arrays_branch
+Deleted branch arrays_branch (was f959580).
+
+$git push origin --delete arrays_branch
+To https://github.com/nikithasri24/DataStructures
+ - [deleted]         arrays_branch
+ 
+ 
 References:
 https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control
 https://docs.github.com/en/github
