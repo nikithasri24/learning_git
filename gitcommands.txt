@@ -104,6 +104,9 @@ $git remote rename nick nikitha
 Removing remotes
 $git remote remove nikitha 
 
+Creating a Branch:
+$git branch arrays_branch
+$git checkout -b arrays_branch
 
 References:
 https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control
